@@ -14,18 +14,18 @@ const DefaultSeo = () => {
   } = useAsync(SettingServices.getGlobalSetting);
   return (
     <NextSeo
-      title={
-        globalSetting?.meta_title ||
-        "KachaBazar - React Grocery & Organic Food Store e-commerce Template"
-      }
-      openGraph={{
-        type: "website",
-        locale: "en_IE",
-        url: globalSetting?.meta_url || "https://kachabazar-store.vercel.app/",
-        site_name:
-          globalSetting?.meta_title ||
-          "KachaBazar - React Grocery & Organic Food Store e-commerce Template",
-      }}
+      // title={
+      //   globalSetting?.meta_title ||
+      //   "KachaBazar - React Grocery & Organic Food Store e-commerce Template"
+      // }
+      // openGraph={{
+      //   type: "website",
+      //   locale: "en_IE",
+      //   url: globalSetting?.meta_url || "https://kachabazar-store.vercel.app/",
+      //   site_name:
+      //     globalSetting?.meta_title ||
+      //     "KachaBazar - React Grocery & Organic Food Store e-commerce Template",
+      // }}
       twitter={{
         handle: "@handle",
         site: "@site",
