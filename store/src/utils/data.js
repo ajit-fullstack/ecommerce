@@ -116,23 +116,23 @@ const sliderData = [
 const ctaCardData = [
   {
     id: 1,
-    title: "Taste of",
-    subTitle: "Fresh & Natural",
-    image: "/cta/cta-bg-1.jpg",
+    title: "Skin Care",
+    subTitle: "Summer Skincare Products",
+    image: "/cta/1.png",
     url: "/search?category=fresh-vegetable",
   },
   {
     id: 2,
     title: "Taste of",
-    subTitle: "Fish & Meat",
-    image: "/cta/cta-bg-2.jpg",
+    subTitle: "Immunity and Health",
+    image: "/cta/2.png",
     url: "/search?Category=fish--meat",
   },
   {
     id: 3,
     title: "Taste of",
-    subTitle: "Bread & Bakery",
-    image: "/cta/cta-bg-3.jpg",
+    subTitle: "Hair Products",
+    image: "/cta/3.png",
     url: "/search?Category=biscuits--cakes",
   },
 ];
@@ -170,7 +170,7 @@ const contactData = [
     title: "contact-page-box1-title",
     info: "contact-page-box1-info",
     icon: FiMail,
-    contact: "kachabazar@gmail.com",
+    contact: "Ayushalya@gmail.com",
     className: "bg-emerald-100",
   },
   {

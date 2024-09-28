@@ -14,8 +14,7 @@ const Offer = () => {
   return (
     <Layout title="Offer" description="this is discount page">
       <PageHeader
-        // headerBg={storeCustomizationSetting?.offers?.header_bg}
-        headerBg={"/logo/fsdf.jpg"}
+        headerBg={storeCustomizationSetting?.offers?.header_bg}
         title={showingTranslateValue(storeCustomizationSetting?.offers?.title)}
       />
       <div className="mx-auto max-w-screen-2xl px-4 py-10 lg:py-20 sm:px-10">

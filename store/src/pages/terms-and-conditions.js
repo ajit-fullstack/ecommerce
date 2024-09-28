@@ -17,8 +17,7 @@ const TermAndConditions = () => {
       description="This is terms and conditions page"
     >
       <PageHeader
-        // headerBg={storeCustomizationSetting?.term_and_condition?.header_bg}
-        headerBg={"/logo/fsdf.jpg"}
+        headerBg={storeCustomizationSetting?.term_and_condition?.header_bg}
         title={showingTranslateValue(
           storeCustomizationSetting?.term_and_condition?.title
         )}

@@ -16,8 +16,7 @@ const Faq = () => {
   return (
     <Layout title="FAQ" description="This is faq page">
       <PageHeader
-        // headerBg={storeCustomizationSetting?.faq?.header_bg}
-        headerBg={"/logo/fsdf.jpg"}
+        headerBg={storeCustomizationSetting?.faq?.header_bg}
         title={showingTranslateValue(storeCustomizationSetting?.faq?.title)}
       />
       <div className="bg-white">
