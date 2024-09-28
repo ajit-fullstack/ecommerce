@@ -15,8 +15,7 @@ const PrivacyPolicy = () => {
   return (
     <Layout title="Privacy Policy" description="This is privacy policy page">
       <PageHeader
-        // headerBg={storeCustomizationSetting?.privacy_policy?.header_bg}
-        headerBg={"/logo/fsdf.jpg"}
+        headerBg={storeCustomizationSetting?.privacy_policy?.header_bg}
         title={showingTranslateValue(
           storeCustomizationSetting?.privacy_policy?.title
         )}

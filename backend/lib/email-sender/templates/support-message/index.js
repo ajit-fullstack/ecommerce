@@ -7,7 +7,7 @@ const sendSupportMessage = (option) => {
 >
 
   <head>
-    <title>Kachabazar</title>
+    <title>Ayushalya</title>
     <!--[if !mso]><!-->
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <!--<![endif]-->

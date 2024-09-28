@@ -35,8 +35,7 @@ const ContactUs = () => {
   return (
     <Layout title="Contact Us" description="This is contact us page">
       <PageHeader
-        // headerBg={storeCustomizationSetting?.contact_us?.header_bg}
-        headerBg={"/logo/fsdf.jpg"}
+        headerBg={storeCustomizationSetting?.contact_us?.header_bg}
         title={showingTranslateValue(
           storeCustomizationSetting?.contact_us?.title
         )}

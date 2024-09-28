@@ -17,8 +17,7 @@ const AboutUs = () => {
   return (
     <Layout title="About Us" description="This is about us page">
       <PageHeader
-        // headerBg={storeCustomizationSetting?.about_us?.header_bg}
-        headerBg={"/logo/fsdf.jpg"}
+        headerBg={storeCustomizationSetting?.about_us?.header_bg}
         title={showingTranslateValue(
           storeCustomizationSetting?.about_us?.title
         )}

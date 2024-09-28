@@ -7,7 +7,9 @@ const connectDB = async () => {
       useFindAndModify: false,
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useCreateIndex: true,
+      useCreateIndex: true,                                                                                             serverSelectionTimeoutMS: 5000,                                                
+      socketTimeoutMS: 45000,         
+      connectTimeoutMS: 10000,  
     });
     console.log("mongodb connection success!");
   } catch (err) {

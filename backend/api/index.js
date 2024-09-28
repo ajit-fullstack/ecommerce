@@ -25,7 +25,7 @@ const { isAuth, isAdmin } = require("../config/auth");
 //   getStoreCustomizationSetting,
 // } = require("../lib/notification/setting");
 
-console.log("test")
+
 
 connectDB();
 const app = express();
