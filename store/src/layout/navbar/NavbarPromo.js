@@ -71,6 +71,7 @@ const NavbarPromo = () => {
 
   return (
     <>
+    
       <div className="hidden lg:block xl:block bg-white border-b">
         <div className="max-w-screen-2xl mx-auto px-3 sm:px-10 h-12 flex justify-between items-center">
           <div className="inline-flex">
@@ -115,7 +116,7 @@ const NavbarPromo = () => {
                       </Popover>
                     )}
 
-                    {storeCustomizationSetting?.navbar?.about_menu_status && (
+                    {/* {storeCustomizationSetting?.navbar?.about_menu_status && (
                       <Link
                         href="/about-us"
                         onClick={() => setIsLoading(!isLoading)}
@@ -125,9 +126,9 @@ const NavbarPromo = () => {
                           storeCustomizationSetting?.navbar?.about_us
                         )}
                       </Link>
-                    )}
+                    )} */}
 
-                    {storeCustomizationSetting?.navbar?.contact_menu_status && (
+                    {/* {storeCustomizationSetting?.navbar?.contact_menu_status && (
                       <Link
                         onClick={() => setIsLoading(!isLoading)}
                         href="/contact-us"
@@ -137,9 +138,96 @@ const NavbarPromo = () => {
                           storeCustomizationSetting?.navbar?.contact_us
                         )}
                       </Link>
-                    )}
+                    )} */}
 
-                    <Popover className="relative font-serif">
+                  
+
+                    {storeCustomizationSetting?.navbar?.offers_menu_status && (
+                      <Link
+                        href="/offer"
+                        onClick={() => setIsLoading(!isLoading)}
+                        className="relative inline-flex items-center  bg-red-100 font-serif ml-4 py-0 px-2 rounded text-sm font-medium text-red-500 hover:text-emerald-600"
+                      >
+                        {showingTranslateValue(
+                          storeCustomizationSetting?.navbar?.offers
+                        )}
+                        <div className="absolute flex w-2 h-2 left-auto -right-1 -top-1">
+                          <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-red-400 opacity-75"></span>
+                          <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                        </div>
+                      </Link>
+                    )}
+                  </Popover.Group>
+                </div>
+              </div>
+            </Popover>
+          </div>
+          <div className="flex">
+            {/* flag */}
+            {/* <div className="dropdown">
+              <div
+                className={`flot-l flag ${currentLang?.flag?.toLowerCase()}`}
+              ></div>
+              <button className="dropbtn">
+                {currentLang?.name}
+                &nbsp;<i className="fas fa-angle-down"></i>
+              </button>
+              <div className="dropdown-content">
+                {languages?.map((language, i) => {
+                  return (
+                    <Link
+                      onClick={() => {
+                        handleLanguage(language);
+                      }}
+                      key={i + 1}
+                      href="/"
+                    >
+                      <div
+                        className={`flot-l flag ${language?.flag?.toLowerCase()}`}
+                      ></div>
+                      {language?.name}
+                    </Link>
+                  );
+                })}
+              </div>
+            </div> */}
+
+            {/* {storeCustomizationSetting?.navbar?.privacy_policy_status && (
+              <Link
+                onClick={() => setIsLoading(!isLoading)}
+                href="/privacy-policy"
+                className="font-serif mx-4 py-2 text-sm font-medium hover:text-emerald-600"
+              >
+                {showingTranslateValue(
+                  storeCustomizationSetting?.navbar?.privacy_policy
+                )}
+              </Link>
+            )} */}
+            {/* {storeCustomizationSetting?.navbar?.term_and_condition_status && (
+              <Link
+                onClick={() => setIsLoading(!isLoading)}
+                href="/terms-and-conditions"
+                className="font-serif mx-4 py-2 text-sm font-medium hover:text-emerald-600"
+              >
+                {showingTranslateValue(
+                  storeCustomizationSetting?.navbar?.term_and_condition
+                )}
+              </Link>
+            )} */}
+              {/* {storeCustomizationSetting?.navbar?.term_and_condition_status && (
+              <Link
+                onClick={() => setIsLoading(!isLoading)}
+                href="/"
+                
+                className="font-serif mx-4 py-2 text-sm font-medium hover:text-emerald-600"
+              >
+                {showingTranslateValue(
+                  storeCustomizationSetting?.navbar?.term_and_condition
+                )}
+              </Link>
+            )} */}
+            {/* pages */}
+              <Popover className="relative font-serif">
                       <Popover.Button className="group inline-flex items-center py-2 text-sm font-medium hover:text-emerald-600 focus:outline-none">
                         <span>
                           {showingTranslateValue(
@@ -291,7 +379,7 @@ const NavbarPromo = () => {
                                 </span>
                               )}
 
-                              <span className="p-2  font-serif items-center rounded-md hover:bg-gray-50 w-full hover:text-emerald-600">
+                              {/* <span className="p-2  font-serif items-center rounded-md hover:bg-gray-50 w-full hover:text-emerald-600">
                                 <div className="w-full flex">
                                   <FiAlertCircle className="my-auto" />
                                   <Link
@@ -302,85 +390,15 @@ const NavbarPromo = () => {
                                     404
                                   </Link>
                                 </div>
-                              </span>
+                              </span> */}
                             </div>
                           </div>
                         </Popover.Panel>
                       </Transition>
-                    </Popover>
-
-                    {storeCustomizationSetting?.navbar?.offers_menu_status && (
-                      <Link
-                        href="/offer"
-                        onClick={() => setIsLoading(!isLoading)}
-                        className="relative inline-flex items-center  bg-red-100 font-serif ml-4 py-0 px-2 rounded text-sm font-medium text-red-500 hover:text-emerald-600"
-                      >
-                        {showingTranslateValue(
-                          storeCustomizationSetting?.navbar?.offers
-                        )}
-                        <div className="absolute flex w-2 h-2 left-auto -right-1 -top-1">
-                          <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-red-400 opacity-75"></span>
-                          <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
-                        </div>
-                      </Link>
-                    )}
-                  </Popover.Group>
-                </div>
-              </div>
-            </Popover>
-          </div>
-          <div className="flex">
-            {/* flag */}
-            <div className="dropdown">
-              <div
-                className={`flot-l flag ${currentLang?.flag?.toLowerCase()}`}
-              ></div>
-              <button className="dropbtn">
-                {currentLang?.name}
-                &nbsp;<i className="fas fa-angle-down"></i>
-              </button>
-              <div className="dropdown-content">
-                {languages?.map((language, i) => {
-                  return (
-                    <Link
-                      onClick={() => {
-                        handleLanguage(language);
-                      }}
-                      key={i + 1}
-                      href="/"
-                    >
-                      <div
-                        className={`flot-l flag ${language?.flag?.toLowerCase()}`}
-                      ></div>
-                      {language?.name}
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
-
-            {storeCustomizationSetting?.navbar?.privacy_policy_status && (
-              <Link
-                onClick={() => setIsLoading(!isLoading)}
-                href="/privacy-policy"
-                className="font-serif mx-4 py-2 text-sm font-medium hover:text-emerald-600"
-              >
-                {showingTranslateValue(
-                  storeCustomizationSetting?.navbar?.privacy_policy
-                )}
-              </Link>
-            )}
-            {storeCustomizationSetting?.navbar?.term_and_condition_status && (
-              <Link
-                onClick={() => setIsLoading(!isLoading)}
-                href="/terms-and-conditions"
-                className="font-serif mx-4 py-2 text-sm font-medium hover:text-emerald-600"
-              >
-                {showingTranslateValue(
-                  storeCustomizationSetting?.navbar?.term_and_condition
-                )}
-              </Link>
-            )}
+              </Popover>
+            <button>
+               <a className="font-serif mx-4 py-2 text-sm font-medium hover:text-emerald-600" href="">Track Your Order</a>
+            </button>
           </div>
         </div>
       </div>

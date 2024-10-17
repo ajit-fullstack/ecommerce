@@ -50,6 +50,7 @@ const Navbar = () => {
 
   return (
     <>
+    
       <CartDrawer />
       <div className="bg-emerald-500 sticky top-0 z-20">
         <div className="max-w-screen-2xl mx-auto px-3 sm:px-10">

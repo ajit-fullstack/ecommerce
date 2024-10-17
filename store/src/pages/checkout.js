@@ -104,7 +104,7 @@ const Checkout = () => {
                           )}
                           name="firstName"
                           type="text"
-                          placeholder="John"
+                          placeholder="FirstName"
                         />
                         <Error errorName={errors.firstName} />
                       </div>
@@ -117,7 +117,7 @@ const Checkout = () => {
                           )}
                           name="lastName"
                           type="text"
-                          placeholder="Doe"
+                          placeholder="lastname"
                           required={false}
                         />
                         <Error errorName={errors.lastName} />
@@ -145,7 +145,7 @@ const Checkout = () => {
                           )}
                           name="contact"
                           type="tel"
-                          placeholder="+062-6532956"
+                          placeholder="+91-9200000000"
                         />
 
                         <Error errorName={errors.contact} />
@@ -170,7 +170,7 @@ const Checkout = () => {
                           )}
                           name="address"
                           type="text"
-                          placeholder="123 Boulevard Rd, Beverley Hills"
+                          placeholder="Street Address"
                         />
                         <Error errorName={errors.address} />
                       </div>
@@ -183,7 +183,7 @@ const Checkout = () => {
                           )}
                           name="city"
                           type="text"
-                          placeholder="Los Angeles"
+                          placeholder="City"
                         />
                         <Error errorName={errors.city} />
                       </div>
@@ -196,7 +196,7 @@ const Checkout = () => {
                           )}
                           name="country"
                           type="text"
-                          placeholder="United States"
+                          placeholder="Country"
                         />
                         <Error errorName={errors.country} />
                       </div>
@@ -209,7 +209,7 @@ const Checkout = () => {
                           )}
                           name="zipCode"
                           type="text"
-                          placeholder="2345"
+                          placeholder="zip code"
                         />
                         <Error errorName={errors.zipCode} />
                       </div>

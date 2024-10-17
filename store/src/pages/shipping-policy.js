@@ -13,15 +13,15 @@ const TermAndConditions = () => {
 
   return (
     <Layout
-      title="Terms & Conditions"
+      title="Shipping Policy"
       description="This is terms and conditions page"
     >
       <PageHeader
-        // headerBg={storeCustomizationSetting?.term_and_condition?.header_bg}
-        headerBg={"/logo/fsdf.jpg"}
-        title={showingTranslateValue(
-          storeCustomizationSetting?.term_and_condition?.title
-        )}
+        headerBg={storeCustomizationSetting?.shipping_policy?.header_bg}
+        // title={showingTranslateValue(
+        //   storeCustomizationSetting?.shipping_policy?.title
+        // )}
+        title="Shipping Policy"
       />
       <div className="bg-white">
         <div className="max-w-screen-2xl mx-auto lg:py-10 py-10 px-3 sm:px-10">
@@ -127,90 +127,49 @@ const TermAndConditions = () => {
               </div>
             </div>
           </div> */}
-          <div className=" ">
-      <h1 className="text-2xl font-bold mb-4">Terms & Conditions</h1>
-      <p className="mb-4">
-        Please read these Terms & Conditions carefully before accessing or using our website, <a href="http://www.ayushalya.com" className="text-blue-500 hover:underline">www.ayushalya.com</a>.
-      </p>
-      <p className="mb-4">
-        By accessing or using our website, you agree to be bound by these Terms & Conditions. If you do not agree to these Terms & Conditions, please do not use our website.
-      </p>
+            <div className=" ">
+  <h1 className="text-2xl font-bold mb-4">Delivery Policy</h1>
+  
+  <h2 className="text-xl font-semibold mb-2">Domestic Orders</h2>
+  <p className="mb-2">
+    <strong>Shipping Methods:</strong> We offer various shipping options to suit your needs, including standard shipping, express shipping, and local pickup.
+  </p>
+  <p className="mb-2">
+    <strong>Shipping Costs:</strong> Shipping costs are calculated based on the weight and size of your order and your delivery location.
+  </p>
+  <p className="mb-2">
+    <strong>Estimated Delivery Times:</strong> Please refer to our shipping carrier's website for estimated delivery times.
+  </p>
+  <p className="mb-2">
+    <strong>Tracking:</strong> You will receive a tracking number once your order is shipped, allowing you to monitor its progress.
+  </p>
 
-      <h2 className="text-xl font-semibold mb-2">1. General Terms</h2>
-      <p className="mb-2">
-        <strong>Website Access:</strong> We grant you a limited, non-exclusive, revocable license to access and use our website for personal, non-commercial purposes.
-      </p>
-      <p className="mb-2">
-        <strong>Modifications:</strong> We reserve the right to modify or discontinue our website or any part thereof at any time, without notice.
-      </p>
-      <p className="mb-2">
-        <strong>Intellectual Property:</strong> All content on our website, including text, graphics, logos, images, and software, is the property of Ayushalya and is protected by copyright and other intellectual property laws.
-      </p>
-      <p className="mb-4">
-        <strong>Prohibited Conduct:</strong> You agree not to:
-        <ul className="list-disc ml-6 mt-2">
-          <li>Use our website for any unlawful or prohibited purpose.</li>
-          <li>Use our website to transmit or distribute any virus, worm, Trojan horse, or other harmful code.</li>
-          <li>Attempt to gain unauthorized access to our website or any part thereof.</li>
-          <li>Impersonate any person or entity.</li>
-          <li>Violate any applicable laws or regulations.</li>
-        </ul>
-      </p>
+  <h2 className="text-xl font-semibold mb-2">International Orders</h2>
+  <p className="mb-2">
+    <strong>Shipping Methods:</strong> We offer international shipping to select countries. Please contact us for more information.
+  </p>
+  <p className="mb-2">
+    <strong>Shipping Costs:</strong> International shipping costs are calculated based on the weight, size, and destination of your order.
+  </p>
+  <p className="mb-2">
+    <strong>Customs Duties & Taxes:</strong> International orders may be subject to customs duties and taxes levied by the destination country. You are responsible for paying these additional charges.
+  </p>
+  <p className="mb-2">
+    <strong>Estimated Delivery Times:</strong> International shipping times may vary depending on the destination country and customs clearance procedures.
+  </p>
 
-      <h2 className="text-xl font-semibold mb-2">2. Product Information</h2>
-      <p className="mb-2">
-        <strong>Accuracy:</strong> We strive to provide accurate product information on our website. However, we do not warrant the accuracy, completeness, or reliability of such information.
-      </p>
-      <p className="mb-2">
-        <strong>Pricing:</strong> Prices are subject to change without notice.
-      </p>
+  <h2 className="text-xl font-semibold mb-2">Delivery Issues</h2>
+  <p className="mb-2">
+    <strong>Undelivered Orders:</strong> If your order is marked as delivered but you have not received it, please contact us within 4 days. We will investigate the issue and assist you in resolving it.
+  </p>
+  <p className="mb-2">
+    <strong>Incorrect Addresses:</strong> Please double-check your shipping address before placing your order. If the address is incorrect and the order has already been shipped, we may not be able to redirect it.
+  </p>
 
-      <h2 className="text-xl font-semibold mb-2">3. Orders</h2>
-      <p className="mb-2">
-        <strong>Acceptance:</strong> Your order is subject to our acceptance. We may refuse or cancel any order for any reason.
-      </p>
-      <p className="mb-2">
-        <strong>Payment:</strong> Payment must be made in full at the time of order.
-      </p>
-
-      <h2 className="text-xl font-semibold mb-2">4. Shipping & Delivery</h2>
-      <p className="mb-2">
-        <strong>Shipping:</strong> We will make reasonable efforts to deliver your order on time. However, we are not responsible for delays caused by factors beyond our control.
-      </p>
-      <p className="mb-2">
-        <strong>Delivery:</strong> Delivery is subject to the terms and conditions of our shipping carrier.
-      </p>
-
-      <h2 className="text-xl font-semibold mb-2">5. Returns & Refunds</h2>
-      <p className="mb-2">
-        Returns: Please refer to our <a href="/return-refund-policy" className="text-blue-500 hover:underline">Return & Refund Policy</a> for details on returns and refunds.
-      </p>
-
-      <h2 className="text-xl font-semibold mb-2">6. Disclaimer of Warranties</h2>
-      <p className="mb-2">
-        <strong>No Warranties:</strong> Our website and its contents are provided on an "as is" basis, without warranties of any kind.
-      </p>
-      <p className="mb-2">
-        <strong>Limitation of Liability:</strong> In no event shall Ayushalya be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of our website or its contents.
-      </p>
-
-      <h2 className="text-xl font-semibold mb-2">7. Governing Law</h2>
-      <p className="mb-2">
-        <strong>Jurisdiction:</strong> These Terms & Conditions shall be governed by and construed in accordance with the laws of Delhi.
-      </p>
-      <p className="mb-2">
-        <strong>Dispute Resolution:</strong> Any dispute arising out of or in connection with these Terms & Conditions shall be submitted to small claims court.
-      </p>
-
-      <h2 className="text-xl font-semibold mb-2">8. Severability</h2>
-      <p className="mb-4">
-        <strong>Severable Provisions:</strong> If any provision of these Terms & Conditions is found to be invalid or unenforceable, that provision shall be deemed severable from the remaining provisions and shall not affect the validity or enforceability of the remaining provisions.
-      </p>
-
-      <p className="">
-        By using our website, you agree to these Terms & Conditions. If you have any questions, please contact us.
-      </p>
-    </div>
+  <p className="mt-4">
+    For any questions or concerns regarding your delivery, please contact our customer service team.
+  </p>
+</div>
 
           
 
