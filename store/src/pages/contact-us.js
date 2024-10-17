@@ -119,6 +119,7 @@ const ContactUs = () => {
               />
             ) : (
               <div className="border p-10 rounded-lg text-center">
+                <a href="https://maps.app.goo.gl/d4Ek4AM5dargH2yD6?g_st=com.google.maps.preview.copy">
                 <span className="flex justify-center text-4xl text-emerald-500 mb-4">
                   <FiMapPin />
                 </span>
@@ -145,6 +146,7 @@ const ContactUs = () => {
                       ?.address_box_address_three
                   )}
                 </p>
+                </a>
               </div>
             )}
           </div>

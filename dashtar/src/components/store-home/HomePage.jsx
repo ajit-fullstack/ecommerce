@@ -467,7 +467,7 @@ const HomePage = ({
                 <TabPanel className="md:mt-10 mt-3">
                   <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3 relative">
                     <label className="block md:text-sm  md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1">
-                      {t("SliderImages")}
+                      {t("Slider Images (950x400 px)")}
                     </label>
                     <div className="sm:col-span-4">
                       <Uploader
@@ -548,7 +548,7 @@ const HomePage = ({
                 <TabPanel>
                   <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3">
                     <label className="block md:text-sm  md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1">
-                      {t("SliderImages")}
+                      {t("Slider Images (950x400 px)")}
                     </label>
                     <div className="sm:col-span-4">
                       <Uploader
@@ -625,7 +625,7 @@ const HomePage = ({
                 <TabPanel>
                   <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3">
                     <label className="block md:text-sm  md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1">
-                      {t("SliderImages")}
+                      {t("Slider Images (950x400 px)")}
                     </label>
                     <div className="sm:col-span-4">
                       <Uploader
@@ -702,7 +702,7 @@ const HomePage = ({
                 <TabPanel>
                   <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3">
                     <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1">
-                      {t("SliderImages")}
+                      {t("Slider Images (950x400 px)")}
                     </label>
                     <div className="sm:col-span-4">
                       <Uploader
@@ -778,7 +778,7 @@ const HomePage = ({
                 <TabPanel>
                   <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3">
                     <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1">
-                      {t("SliderImages")}
+                      {t("Slider Images (1920x400 px)")}
                     </label>
                     <div className="sm:col-span-4">
                       <Uploader
@@ -1411,7 +1411,7 @@ const HomePage = ({
 
               <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3 relative">
                 <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1">
-                  {t("Image")}
+                  {t("Image (373x250 px)")}
                 </label>
                 <div className="sm:col-span-4">
                   <Uploader
@@ -1581,7 +1581,7 @@ const HomePage = ({
 
               <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3 relative">
                 <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1">
-                  {t("ImageLeft")}
+                  {t("ImageLeft (500x500 px)")}
                 </label>
                 <div className="sm:col-span-4">
                   <Uploader
@@ -1593,7 +1593,7 @@ const HomePage = ({
 
               <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3 relative">
                 <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1">
-                  {t("ImageRight")}
+                  {t("ImageRight (500x500 px)")}
                 </label>
                 <div className="sm:col-span-4">
                   <Uploader
@@ -1605,7 +1605,7 @@ const HomePage = ({
 
               <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3 relative">
                 <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1">
-                  {t("Button1image")}
+                  {t("Button1image (209x60 px)")}
                 </label>
                 <div className="sm:col-span-4">
                   <Uploader
@@ -1617,7 +1617,7 @@ const HomePage = ({
 
               <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3">
                 <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1">
-                  {t("Button1Link")}
+                  {t("Button1Link ")}
                 </label>
                 <div className="sm:col-span-4">
                   <InputAreaTwo
@@ -1633,7 +1633,7 @@ const HomePage = ({
 
               <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3 relative">
                 <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1">
-                  {t("Button2image")}
+                  {t("Button2image (209x60 px)")}
                 </label>
                 <div className="sm:col-span-4">
                   <Uploader
@@ -2452,7 +2452,7 @@ const HomePage = ({
             >
               <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3">
                 <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1">
-                  {t("PaymentMethod")}
+                  {t("Payment Method (342x106 px)")}
                 </label>
                 <div className="sm:col-span-4">
                   <Uploader

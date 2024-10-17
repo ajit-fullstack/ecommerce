@@ -19,9 +19,11 @@ const TermAndConditions = () => {
       <PageHeader
         // headerBg={storeCustomizationSetting?.term_and_condition?.header_bg}
         headerBg={"/logo/fsdf.jpg"}
-        title={showingTranslateValue(
-          storeCustomizationSetting?.term_and_condition?.title
-        )}
+        // title={showingTranslateValue(
+        //   storeCustomizationSetting?.term_and_condition?.title
+        // )}<
+
+        title = "Return - Refund & Cancellation Policy"
       />
       <div className="bg-white">
         <div className="max-w-screen-2xl mx-auto lg:py-10 py-10 px-3 sm:px-10">
