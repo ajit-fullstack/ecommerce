@@ -118,7 +118,7 @@ const AboutUs = ({
             >
               <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3 relative">
                 <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 md:mb-1">
-                  {t("PageHeaderBg")}
+                  {t("Page Header Background (1920x373px)")}
                 </label>
                 <div className="sm:col-span-4">
                   <Uploader
@@ -354,7 +354,7 @@ const AboutUs = ({
               className="mb-height-0 grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3 relative"
             >
               <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 md:mb-1">
-                {t("TopContentRightImage")}
+                {t("Top Content Right Image (1050x805px)")}
               </label>
               <div className="sm:col-span-4">
                 <Uploader
@@ -437,7 +437,7 @@ const AboutUs = ({
 
               <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3">
                 <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 md:mb-1">
-                  {t("MiddleContentImage")}
+                  {t("Content Image (1420x425px)")}
                 </label>
                 <div className="sm:col-span-4">
                   <Uploader
@@ -529,7 +529,7 @@ const AboutUs = ({
                   <TabPanel className="mt-10">
                     <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3 relative">
                       <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 md:mb-1">
-                        {t("OurFounderOneImage")}
+                        {t("Our Team One Image (600x600 px)")}
                       </label>
                       <div className="sm:col-span-4">
                         <Uploader
@@ -578,7 +578,7 @@ const AboutUs = ({
                   <TabPanel>
                     <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3">
                       <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 md:mb-1">
-                        {t("OurFounderTwoImage")}
+                        {t("Our Team Two Image (600x600 px)")}
                       </label>
                       <div className="sm:col-span-4">
                         <Uploader
@@ -627,7 +627,7 @@ const AboutUs = ({
                   <TabPanel>
                     <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3">
                       <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 md:mb-1">
-                        {t("OurFounderThreeImage")}
+                        {t("Our Team Three Image (600x600 px)")}
                       </label>
                       <div className="sm:col-span-4">
                         <Uploader
@@ -678,7 +678,7 @@ const AboutUs = ({
                   <TabPanel>
                     <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3">
                       <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 md:mb-1">
-                        {t("OurFounderFourImage")}
+                        {t("Our Team Four Image (600x600 px)")}
                       </label>
                       <div className="sm:col-span-4">
                         <Uploader
@@ -729,7 +729,7 @@ const AboutUs = ({
                   <TabPanel>
                     <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 md:mb-6 mb-3">
                       <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 md:mb-1">
-                        {t("OurFounderFiveImage")}
+                        {t("Our Team Five Image (600x600 px)")}
                       </label>
                       <div className="sm:col-span-4">
                         <Uploader
@@ -779,7 +779,7 @@ const AboutUs = ({
                   <TabPanel>
                     <div className="grid md:grid-cols-5 sm:grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 ">
                       <label className="block md:text-sm md:col-span-1 sm:col-span-2 text-xs font-semibold text-gray-600 dark:text-gray-400 md:mb-1">
-                        {t("OurFounderSixImage")}
+                        {t("Our Team Six Image (600x600 px)")}
                       </label>
                       <div className="sm:col-span-4">
                         <Uploader

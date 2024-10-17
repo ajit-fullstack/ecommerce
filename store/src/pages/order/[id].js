@@ -84,6 +84,15 @@ const Order = ({ params }) => {
                   }
                 </PDFDownloadLink>
 
+                      <a href="https://ayushalya.com/">
+                      <button  className="mb-3 sm:mb-0 md:mb-0 lg:mb-0 flex items-center justify-center bg-emerald-500  text-white transition-all font-serif text-sm font-semibold h-10 py-2 px-5 rounded-md">
+                      {"Return To Shop"}
+                        <span className="ml-2 text-base">
+                          {/* <IoCloudDownloadOutline /> */}
+                        </span>
+                      </button>
+                      </a>
+
                 <ReactToPrint
                   trigger={() => (
                     <button className="mb-3 sm:mb-0 md:mb-0 lg:mb-0 flex items-center justify-center bg-emerald-500  text-white transition-all font-serif text-sm font-semibold h-10 py-2 px-5 rounded-md">
@@ -106,6 +115,8 @@ const Order = ({ params }) => {
     </Layout>
   );
 };
+git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
 
 export const getServerSideProps = ({ params }) => {
   return {
