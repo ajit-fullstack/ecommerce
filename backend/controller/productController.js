@@ -167,6 +167,10 @@ const updateProduct = async (req, res) => {
       product.sku = req.body.sku;
       product.barcode = req.body.barcode;
       product.slug = req.body.slug;
+      product.meta_title = req.body.meta_title;
+      product.meta_description = req.body.meta_description;
+      product.robots_index = req.body.robots_index;
+      product.robots_follow = req.body.robots_follow;
       product.categories = req.body.categories;
       product.category = req.body.category;
       product.show = req.body.show;

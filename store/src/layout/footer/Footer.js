@@ -2,6 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import useTranslation from "next-translate/useTranslation";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
+
+
 import {
   FacebookIcon,
   LinkedinIcon,
@@ -203,11 +210,10 @@ const Footer = () => {
               <ul className="text-sm lg:text-15px flex flex-col space-y-3">
                 <li className="flex items-baseline">
                   <Link
-                    href={`${
-                      userInfo?.email
+                    href={`${userInfo?.email
                         ? storeCustomizationSetting?.footer?.block3_sub_link1
                         : "#"
-                    }`}
+                      }`}
                     className="text-gray-600 inline-block w-full hover:text-emerald-500"
                   >
                     <CMSkeleton
@@ -223,11 +229,10 @@ const Footer = () => {
                 </li>
                 <li className="flex items-baseline">
                   <Link
-                    href={`${
-                      userInfo?.email
+                    href={`${userInfo?.email
                         ? storeCustomizationSetting?.footer?.block3_sub_link2
                         : "#"
-                    }`}
+                      }`}
                     className="text-gray-600 inline-block w-full hover:text-emerald-500"
                   >
                     <CMSkeleton
@@ -243,11 +248,10 @@ const Footer = () => {
                 </li>
                 <li className="flex items-baseline">
                   <Link
-                    href={`${
-                      userInfo?.email
+                    href={`${userInfo?.email
                         ? storeCustomizationSetting?.footer?.block3_sub_link3
                         : "#"
-                    }`}
+                      }`}
                     className="text-gray-600 inline-block w-full hover:text-emerald-500"
                   >
                     <CMSkeleton
@@ -263,11 +267,10 @@ const Footer = () => {
                 </li>
                 <li className="flex items-baseline">
                   <Link
-                    href={`${
-                      userInfo?.email
+                    href={`${userInfo?.email
                         ? storeCustomizationSetting?.footer?.block3_sub_link4
                         : "#"
-                    }`}
+                      }`}
                     className="text-gray-600 inline-block w-full hover:text-emerald-500"
                   >
                     <CMSkeleton
@@ -343,10 +346,10 @@ const Footer = () => {
                     storeCustomizationSetting?.footer?.social_pinterest ||
                     storeCustomizationSetting?.footer?.social_linkedin ||
                     storeCustomizationSetting?.footer?.social_whatsapp) && (
-                    <span className="text-base leading-7 font-medium block mb-2 pb-0.5">
-                      {t("common:footer-follow-us")}
-                    </span>
-                  )}
+                      <span className="text-base leading-7 font-medium block mb-2 pb-0.5">
+                        {t("common:footer-follow-us")}
+                      </span>
+                    )}
                   <ul className="text-sm flex">
                     {storeCustomizationSetting?.footer?.social_facebook && (
                       <li className="flex items-center mr-3 transition ease-in-out duration-500">
@@ -357,7 +360,10 @@ const Footer = () => {
                           target="_blank"
                           className="block text-center mx-auto text-gray-500 hover:text-white"
                         >
-                          <FacebookIcon size={34} round />
+                          {/* <FacebookIcon size={34} round /> */}
+                          <div className="flex items-center justify-center w-9 h-9 rounded-full bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800">
+                            <FaFacebookF className="text-white text-4xl text-[25px]" />
+                          </div>
                         </Link>
                       </li>
                     )}
@@ -370,7 +376,10 @@ const Footer = () => {
                           target="_blank"
                           className="block text-center mx-auto text-gray-500 hover:text-white"
                         >
-                          <TwitterIcon size={34} round />
+                          {/* <TwitterIcon size={34} round /> */}
+                          <div className="flex items-center justify-center w-9 h-9 rounded-full bg-gradient-to-br from-gray-800 via-gray-900 to-black">
+                            <FaXTwitter className="text-white text-4xl text-[25px]" />
+                          </div>
                         </Link>
                       </li>
                     )}
@@ -383,7 +392,12 @@ const Footer = () => {
                           target="_blank"
                           className="block text-center mx-auto text-gray-500 hover:text-white"
                         >
-                          <PinterestIcon size={34} round />
+                          {/* <PinterestIcon size={34} round /> */}
+                          {/* <FaInstagramSquare size={34} round /> */}
+                          <div className="flex items-center justify-center w-9 h-9 rounded-full bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600">
+                            <FaInstagram className="text-white text-4xl text-[25px]" />
+                          </div>
+
                         </Link>
                       </li>
                     )}
@@ -396,7 +410,10 @@ const Footer = () => {
                           target="_blank"
                           className="block text-center mx-auto text-gray-500 hover:text-white"
                         >
-                          <LinkedinIcon size={34} round />
+                          {/* <LinkedinIcon size={34} round /> */}
+                          <div className="flex items-center justify-center w-9 h-9 rounded-full bg-gradient-to-br from-red-500 via-red-600 to-red-700">
+                            <FaYoutube className="text-white text-4xl text-[25px]" />
+                          </div>
                         </Link>
                       </li>
                     )}
@@ -409,7 +426,10 @@ const Footer = () => {
                           target="_blank"
                           className="block text-center mx-auto text-gray-500 hover:text-white"
                         >
-                          <WhatsappIcon size={34} round />
+                          {/* <WhatsappIcon size={34} round /> */}
+                          <div className="flex items-center justify-center w-9 h-9 rounded-full bg-gradient-to-br from-green-500 via-green-600 to-green-700">
+                            <FaWhatsapp className="text-white text-4xl text-[25px]" />
+                          </div>
                         </Link>
                       </li>
                     )}
@@ -461,7 +481,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="text-emerald-500"
           >
-          Ayushalya.com
+            Ayushalya.com
           </Link>
           , All rights reserved.
         </p>

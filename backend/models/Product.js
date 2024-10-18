@@ -18,6 +18,24 @@ const productSchema = new mongoose.Schema(
       type: Object,
       required: true,
     },
+    meta_title: {
+      type: Object,
+      required: false,
+    },
+    meta_description: {
+      type: Object,
+      required: false,
+    },
+
+    robots_follow: {
+      type: String,
+      required: false,
+    },
+
+    robots_index: {
+      type: String,
+      required: false,
+    },
     description: {
       type: Object,
       required: false,

@@ -258,9 +258,9 @@ const ProductDrawer = ({ id }) => {
                     singleSelect={true}
                     ref={resetRefTwo}
                     hidePlaceholder={true}
-                    onKeyPressFn={function noRefCheck() {}}
-                    onRemove={function noRefCheck() {}}
-                    onSearch={function noRefCheck() {}}
+                    onKeyPressFn={function noRefCheck() { }}
+                    onRemove={function noRefCheck() { }}
+                    onSearch={function noRefCheck() { }}
                     onSelect={(v) => setDefaultCategory(v)}
                     selectedValues={defaultCategory}
                     options={selectedCategory}
@@ -356,6 +356,111 @@ const ProductDrawer = ({ id }) => {
                   />
                 </div>
               </div>
+
+              <div className="grid grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+                <LabelArea label={t("Product Meta Description")} />
+                <div className="col-span-8 sm:col-span-4">
+                  <Textarea
+                    className="border text-sm  block w-full bg-gray-100 border-gray-200"
+                    {...register("meta_description", {
+                      required: false,
+                    })}
+                    name="meta_description"
+                    placeholder={t("Product Meta Description")}
+                    rows="4"
+                    spellCheck="false"
+                  />
+                  <Error errorName={errors.meta_description} />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+                <LabelArea label={t("Product Meta Title")} />
+                <div className="col-span-8 sm:col-span-4">
+                  <Textarea
+                    className="border text-sm  block w-full bg-gray-100 border-gray-200"
+                    {...register("meta_title", {
+                      required: false,
+                    })}
+                    name="meta_title"
+                    placeholder={t("Product Meta Title")}
+                    rows="4"
+                    spellCheck="false"
+                  />
+                  <Error errorName={errors.meta_title} />
+                </div>
+              </div>
+
+
+              {/* Robot follow */}
+              <div className="grid grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+                <LabelArea label={t("Product Robots Follow")} />
+                <div className="col-span-8 sm:col-span-4">
+                  <div className="flex items-center">
+                    <label className="mr-4">
+                      <input
+                        type="radio"
+                        value="follow"
+                        {...register("robots_follow", {
+                          required: true, // Change to true if required
+                        })}
+                        className="mr-2"
+                      />
+                      {t("Follow")}
+                    </label>
+                    <label>
+                      <input
+                        type="radio"
+                        value="nofollow"
+                        {...register("robots_follow", {
+                          required: true, // Change to true if required
+                        })}
+                        className="mr-2"
+                      />
+                      {t("NoFollow")}
+                    </label>
+                  </div>
+                  {errors.robots_follow && (
+                    <Error errorName={errors.robots_follow} />
+                  )}
+                </div>
+              </div>
+
+              {/* Robot index */}
+              <div className="grid grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+                <LabelArea label={t("Product Robots Index")} />
+                <div className="col-span-8 sm:col-span-4">
+                  <div className="flex items-center">
+                    <label className="mr-4">
+                      <input
+                        type="radio"
+                        value="index"
+                        {...register("robots_index", {
+                          required: true, // Change to true if required
+                        })}
+                        className="mr-2"
+                      />
+                      {t("Index")}
+                    </label>
+                    <label>
+                      <input
+                        type="radio"
+                        value="noindex"
+                        {...register("robots_index", {
+                          required: true, // Change to true if required
+                        })}
+                        className="mr-2"
+                      />
+                      {t("NoIndex")}
+                    </label>
+                  </div>
+                  {errors.robots_index && (
+                    <Error errorName={errors.robots_index} />
+                  )}
+                </div>
+              </div>
+
+
             </div>
           )}
 
