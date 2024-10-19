@@ -1,4 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
+import { Helmet } from 'react-helmet';
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -228,10 +229,21 @@ const ProductScreen = ({ product, attributes, relatedProducts }) => {
     .toLowerCase()
     .replace(/[^A-Z0-9]+/gi, "-");
 
-  // console.log("discount", discount);
+  // console.log("product", product);
 
   return (
     <>
+     
+     <Helmet>
+        <meta name="title" content={product.meta_title} />
+        <meta name="description" content={product.meta_description} />
+        <meta 
+                    name="robots" 
+                    content={`${product.robots_index}, ${product.robots_follow}`} 
+                />
+      </Helmet> 
+      
+      
       {isLoading ? (
         <Loading loading={isLoading} />
       ) : (
@@ -239,6 +251,7 @@ const ProductScreen = ({ product, attributes, relatedProducts }) => {
           title={showingTranslateValue(product?.title)}
           description={showingTranslateValue(product.description)}
         >
+          
           <div className="px-0 py-10 lg:py-10">
             <div className="mx-auto px-3 lg:px-10 max-w-screen-2xl">
               <div className="flex items-center pb-4">

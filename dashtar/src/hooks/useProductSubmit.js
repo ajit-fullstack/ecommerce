@@ -134,6 +134,10 @@ const useProductSubmit = (id) => {
           [language]: data.description || "",
           // ...descriptionTranslates,
         }),
+        meta_title: data.meta_title,
+        meta_description: data.meta_description,
+        robots_follow: data.robots_follow,
+        robots_index: data.robots_index,
         slug: data.slug
           ? data.slug
           : data.title.toLowerCase().replace(/[^A-Z0-9]+/gi, "-"),
@@ -189,6 +193,8 @@ const useProductSubmit = (id) => {
           setValue("slug", res.slug);
           setValue("show", res.show);
           setValue("barcode", res.barcode);
+          setValue("meta_title", res.meta_title);
+          setValue("meta_description", res.meta_description);
           setValue("stock", res.stock);
           setTag(JSON.parse(res.tag));
           setImageUrl(res.image);
@@ -250,6 +256,10 @@ const useProductSubmit = (id) => {
       setValue("sku");
       setValue("title");
       setValue("slug");
+      setValue("meta_title");
+      setValue("meta_description");
+      setValue("robots_follow");
+      setValue("robots_index");
       setValue("description");
       setValue("quantity");
       setValue("stock");
@@ -276,6 +286,10 @@ const useProductSubmit = (id) => {
       clearErrors("title");
       clearErrors("slug");
       clearErrors("description");
+      clearErrors("robots_index");
+      clearErrors("robots_follow");
+      clearErrors("meta_title");
+      clearErrors("meta_description");
       clearErrors("stock");
       clearErrors("quantity");
       setValue("stock", 0);
@@ -316,6 +330,10 @@ const useProductSubmit = (id) => {
             setValue("show", res.show);
             setValue("sku", res.sku);
             setValue("barcode", res.barcode);
+            setValue("robots_follow", res.robots_follow);
+            setValue("robots_index", res.robots_index);
+            setValue("meta_title", res.meta_title);
+            setValue("meta_description", res.meta_description);
             setValue("stock", res.stock);
             setValue("productId", res.productId);
             setValue("price", res?.prices?.price);
