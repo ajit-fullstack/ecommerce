@@ -117,7 +117,7 @@ const Checkout = () => {
                           )}
                           name="lastName"
                           type="text"
-                          placeholder="lastname"
+                          placeholder="lastName"
                           required={false}
                         />
                         <Error errorName={errors.lastName} />
@@ -483,7 +483,8 @@ const Checkout = () => {
                       storeCustomizationSetting?.checkout?.total_cost
                     )}
                     <span className="font-serif font-extrabold text-lg">
-                      {currency}
+                      {/* {currency} */}
+                      ₹
                       {parseFloat(total).toFixed(2)}
                     </span>
                   </div>
