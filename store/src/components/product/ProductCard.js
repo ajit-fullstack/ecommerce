@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import { useState } from "react";
 import { IoAdd, IoBagAddSharp, IoRemove } from "react-icons/io5";
@@ -14,11 +15,15 @@ import useGetSetting from "@hooks/useGetSetting";
 import Discount from "@components/common/Discount";
 import useUtilsFunction from "@hooks/useUtilsFunction";
 import ProductModal from "@components/modal/ProductModal";
+import { useContext, useEffect } from "react";
 import ImageWithFallback from "@components/common/ImageWithFallBack";
 import { handleLogEvent } from "src/lib/analytics";
+import { SidebarContext } from "@context/SidebarContext";
 
 const ProductCard = ({ product, attributes }) => {
   const [modalOpen, setModalOpen] = useState(false);
+  const router = useRouter();
+  const { setIsLoading, isLoading } = useContext(SidebarContext);
 
   const { items, addItem, updateItemQuantity, inCart } = useCart();
   const { handleIncreaseQuantity } = useAddToCart();
@@ -53,9 +58,18 @@ const ProductCard = ({ product, attributes }) => {
     setModalOpen(event);
   };
 
+  const handleMoreInfo = (slug) => {
+    setModalOpen(false);
+
+    router.push(`/product/${slug}`);
+    setIsLoading(!isLoading);
+    handleLogEvent("product", `opened ${slug} product details`);
+  };
+
+
   return (
     <>
-      {modalOpen && (
+      {/* {modalOpen && (
         <ProductModal
           modalOpen={modalOpen}
           setModalOpen={setModalOpen}
@@ -63,7 +77,7 @@ const ProductCard = ({ product, attributes }) => {
           currency={currency}
           attributes={attributes}
         />
-      )}
+      )} */}
 
       <div className="group box-border overflow-hidden flex rounded-md shadow-sm pe-0 flex-col items-center bg-white relative">
         <div className="w-full flex justify-between">
@@ -78,9 +92,10 @@ const ProductCard = ({ product, attributes }) => {
               `opened ${showingTranslateValue(product?.title)} product modal`
             );
           }}
+          
           className="relative flex justify-center cursor-pointer pt-2 w-full h-44"
         >
-          <div className="relative w-full h-full p-2">
+          <div onClick={() => handleMoreInfo(product.slug)} className="relative w-full h-full p-2">
             {product.image[0] ? (
               <ImageWithFallback src={product.image[0]} alt="product" />
             ) : (
@@ -93,6 +108,7 @@ const ProductCard = ({ product, attributes }) => {
                 sizes="100%"
                 alt="product"
                 className="object-contain transition duration-150 ease-linear transform group-hover:scale-105"
+                
               />
             )}
           </div>
@@ -102,8 +118,8 @@ const ProductCard = ({ product, attributes }) => {
             <span className="text-gray-400 font-medium text-xs d-block mb-1">
               {product.unit}
             </span>
-            <h2 className="text-heading truncate mb-0 block text-sm font-medium text-gray-600">
-              <span className="line-clamp-2">
+            <h2 className="text-heading truncate mb-0 block text-sm font-medium text-gray-600 cursor-pointer">
+              <span onClick={() => handleMoreInfo(product.slug)} className="line-clamp-2">
                 {showingTranslateValue(product?.title)}
               </span>
             </h2>
@@ -111,6 +127,7 @@ const ProductCard = ({ product, attributes }) => {
 
           <div className="flex justify-between items-center text-heading text-sm sm:text-base space-s-2 md:text-base lg:text-xl">
             <Price
+            
               card
               product={product}
               currency={currency}
