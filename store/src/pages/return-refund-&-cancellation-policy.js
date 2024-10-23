@@ -212,6 +212,9 @@ const TermAndConditions = () => {
       <p className="">
         By using our website, you agree to these Terms & Conditions. If you have any questions, please contact us.
       </p>
+      <span>
+      Please email us at <a href="mailto:info@ayushalya.com">info@ayushalya.com</a> or call us at <a href="tel:+919312484436">+91-9312484436</a>.
+    </span>
     </div>
 
           
