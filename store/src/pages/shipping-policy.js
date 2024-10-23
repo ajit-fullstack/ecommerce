@@ -169,6 +169,9 @@ const TermAndConditions = () => {
   <p className="mt-4">
     For any questions or concerns regarding your delivery, please contact our customer service team.
   </p>
+  <span>
+      Please email us at <a href="mailto:info@ayushalya.com">info@ayushalya.com</a> or call us at <a href="tel:+919312484436">+91-9312484436</a>.
+    </span>
 </div>
 
           

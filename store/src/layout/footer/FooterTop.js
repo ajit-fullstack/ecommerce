@@ -18,11 +18,11 @@ const FooterTop = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-2 md:gap-3 lg:gap-3 items-center">
           <div className="flex-grow hidden lg:flex md:flex md:justify-items-center lg:justify-start">
             <Image
-              // src={
-              //   storeCustomizationSetting?.home?.daily_need_img_left ||
-              //   "/app-download-img-left.png"
-              // }
-              src={"/logo/app-download-img-left.png"}
+              src={
+                storeCustomizationSetting?.home?.daily_need_img_left ||
+                "/app-download-img-left.png"
+              }
+              // src={"/logo/app-download-img-left.png"}
               alt="app download"
               width={500}
               height={394}
@@ -95,11 +95,11 @@ const FooterTop = () => {
           <div className="md:hidden lg:block">
             <div className="flex-grow hidden lg:flex md:flex lg:justify-end">
               <Image
-                // src={
-                //   storeCustomizationSetting?.home?.daily_need_img_right ||
-                //   "/app-download-img.png"
-                // }
-                src={"/logo/app-download-img-left.png"}
+                src={
+                  storeCustomizationSetting?.home?.daily_need_img_right ||
+                  "/app-download-img.png"
+                }
+                // src={"/logo/app-download-img-left.png"}
                 width={500}
                 height={394}
                 priority

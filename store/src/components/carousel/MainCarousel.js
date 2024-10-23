@@ -35,9 +35,9 @@ const MainCarousel = () => {
       url: showingUrl(storeCustomizationSetting?.slider?.first_link),
       // url: "http://localhost:4100/orders",
       image:
-        // showingImage(storeCustomizationSetting?.slider?.first_img) ||
-        // "/slider/slider-1.jpg",
-        "/logo/Untitled design (22).png",
+        showingImage(storeCustomizationSetting?.slider?.first_img) ||
+        "/slider/slider-1.jpg",
+        // "/logo/Untitled design (22).png",
     },
     {
       id: 2,
@@ -52,9 +52,9 @@ const MainCarousel = () => {
       ),
       url: showingUrl(storeCustomizationSetting?.slider?.second_link),
       image:
-        // showingImage(storeCustomizationSetting?.slider?.second_img) ||
-        // "/slider/slider-2.jpg",
-        "/logo/1.png",
+        showingImage(storeCustomizationSetting?.slider?.second_img) ||
+        "/slider/slider-2.jpg",
+        // "/logo/1.png",
     },
     {
       id: 3,
@@ -69,9 +69,9 @@ const MainCarousel = () => {
       ),
       url: showingUrl(storeCustomizationSetting?.slider?.third_link),
       image:
-        // showingImage(storeCustomizationSetting?.slider?.third_img) ||
-        // "/slider/slider-3.jpg",
-        "/logo/2.png",
+        showingImage(storeCustomizationSetting?.slider?.third_img) ||
+        "/slider/slider-3.jpg",
+        // "/logo/2.png",
     },
     {
       id: 4,
@@ -86,9 +86,9 @@ const MainCarousel = () => {
       ),
       url: showingUrl(storeCustomizationSetting?.slider?.four_link),
       image:
-        // showingImage(storeCustomizationSetting?.slider?.four_img) ||
-        // "/slider/slider-1.jpg",
-        "/logo/3.png",
+        showingImage(storeCustomizationSetting?.slider?.four_img) ||
+        "/slider/slider-1.jpg",
+        // "/logo/3.png",
     },
     {
       id: 5,
@@ -103,9 +103,9 @@ const MainCarousel = () => {
       ),
       url: showingUrl(storeCustomizationSetting?.slider?.five_link),
       image:
-        // showingImage(storeCustomizationSetting?.slider?.five_img) ||
-        // "/slider/slider-2.jpg",
-        "/logo/4.png",
+        showingImage(storeCustomizationSetting?.slider?.five_img) ||
+        "/slider/slider-2.jpg",
+        // "/logo/4.png",
     },
   ];
 

@@ -48,7 +48,7 @@ const StoreSetting = () => {
       setEnabledStripe(!enabledStripe);
     } else if (id === "cod" && !checked) {
       setEnabledCOD(!enabledCOD);
-      setEnabledStripe(true);
+      // setEnabledStripe(true);
     } else {
       setEnabledCOD(!enabledCOD);
     }

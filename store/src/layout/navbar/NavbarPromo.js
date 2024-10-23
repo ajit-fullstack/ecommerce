@@ -319,6 +319,24 @@ const NavbarPromo = () => {
                       )}
 
 
+{storeCustomizationSetting?.navbar
+                        ?.contact_menu_status && (
+                        <span className="p-2  font-serif items-center rounded-md hover:bg-gray-50 w-full hover:text-emerald-600">
+                          <div className="w-full flex">
+                            <FiPhoneIncoming className="my-auto" />
+                            <Link
+                              href="/contact-us"
+                              onClick={() => setIsLoading(!isLoading)}
+                              className="relative inline-flex items-center font-serif ml-2 py-0 rounded text-sm font-medium  hover:text-emerald-600"
+                            >
+                              {showingTranslateValue(
+                                storeCustomizationSetting?.navbar?.contact_us
+                              )}
+                            </Link>
+                          </div>
+                        </span>
+                      )}
+
 
                       <span className="p-2 font-serif items-center rounded-md hover:bg-gray-50 w-full hover:text-emerald-600">
                         <div className="w-full flex">
@@ -336,13 +354,13 @@ const NavbarPromo = () => {
                       
                       <span className="p-2 font-serif items-center rounded-md hover:bg-gray-50 w-full hover:text-emerald-600">
                         <div className="w-full flex">
-                          <MdOutlineCancel className="my-auto" />
+                          <MdOutlineCancel className="my-auto" style={{ width: '20px', height: '20px' }} />
                           <Link
                             href="/return-refund-&-cancellation-policy"
                             onClick={() => setIsLoading(!isLoading)}
                             className="relative inline-flex items-center font-serif ml-2 py-0 rounded text-sm font-medium  hover:text-emerald-600"
                           >
-                            Cancellation Policy
+                            Return Refund & Cancellation Policy
                             
                           </Link>
                         </div>
@@ -354,23 +372,7 @@ const NavbarPromo = () => {
 
 
 
-                      {storeCustomizationSetting?.navbar
-                        ?.contact_menu_status && (
-                        <span className="p-2  font-serif items-center rounded-md hover:bg-gray-50 w-full hover:text-emerald-600">
-                          <div className="w-full flex">
-                            <FiPhoneIncoming className="my-auto" />
-                            <Link
-                              href="/contact-us"
-                              onClick={() => setIsLoading(!isLoading)}
-                              className="relative inline-flex items-center font-serif ml-2 py-0 rounded text-sm font-medium  hover:text-emerald-600"
-                            >
-                              {showingTranslateValue(
-                                storeCustomizationSetting?.navbar?.contact_us
-                              )}
-                            </Link>
-                          </div>
-                        </span>
-                      )}
+                    
 
                       {storeCustomizationSetting?.navbar
                         ?.privacy_policy_status && (
