@@ -21,15 +21,15 @@ const Login = () => {
                 <div className="text-center mb-6">
                   <h2 className="text-3xl font-bold font-serif">Login</h2>
                   <p className="text-sm md:text-base text-gray-500 mt-2 mb-8 sm:mb-10">
-                    Login with your email and password
+                    Login with Gmail
                   </p>
                 </div>
-                <form
+                {/* <form
                   onSubmit={handleSubmit(submitHandler)}
                   className="flex flex-col justify-center"
-                >
-                  <div className="grid grid-cols-1 gap-5">
-                    <div className="form-group">
+                > */}
+                  {/* <div className="grid grid-cols-1 gap-5"> */}
+                    {/* <div className="form-group">
                       <InputArea
                         register={register}
                         defaultValue="justin@gmail.com"
@@ -55,7 +55,7 @@ const Login = () => {
                       />
 
                       <Error errorName={errors.password} />
-                    </div>
+                    </div> */}
 
                     {/* <div className="flex items-center justify-between">
                       <div className="flex ms-auto">
@@ -67,7 +67,7 @@ const Login = () => {
                         </Link>
                       </div>
                     </div> */}
-                    {loading ? (
+                    {/* {loading ? (
                       <button
                         disabled={loading}
                         type="submit"
@@ -91,11 +91,11 @@ const Login = () => {
                       >
                         Login
                       </button>
-                    )}
-                  </div>
-                </form>
+                    )} */}
+                  {/* </div> */}
+                {/* </form> */}
                 <BottomNavigation
-                  or={true}
+                  // or={true}
                   route={"/auth/signup"}
                   pageName={"Sign Up"}
                   loginTitle="Login"
