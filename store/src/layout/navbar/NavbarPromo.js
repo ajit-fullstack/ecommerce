@@ -284,7 +284,7 @@ const NavbarPromo = () => {
                         </div>
                       </span>
 
-                      {storeCustomizationSetting?.navbar?.faq_status && (
+                      {/* {storeCustomizationSetting?.navbar?.faq_status && (
                         <span className="p-2 font-serif items-center rounded-md hover:bg-gray-50 w-full hover:text-emerald-600">
                           <div className="w-full flex">
                             <FiHelpCircle className="my-auto" />
@@ -299,7 +299,7 @@ const NavbarPromo = () => {
                             </Link>
                           </div>
                         </span>
-                      )}
+                      )} */}
 
                       {storeCustomizationSetting?.navbar?.about_menu_status && (
                         <span className="p-2  font-serif items-center rounded-md hover:bg-gray-50 w-full hover:text-emerald-600">
@@ -319,7 +319,7 @@ const NavbarPromo = () => {
                       )}
 
 
-{storeCustomizationSetting?.navbar
+                      {storeCustomizationSetting?.navbar
                         ?.contact_menu_status && (
                         <span className="p-2  font-serif items-center rounded-md hover:bg-gray-50 w-full hover:text-emerald-600">
                           <div className="w-full flex">
@@ -365,14 +365,6 @@ const NavbarPromo = () => {
                           </Link>
                         </div>
                       </span>
-
-
-                      
-                    
-
-
-
-                    
 
                       {storeCustomizationSetting?.navbar
                         ?.privacy_policy_status && (

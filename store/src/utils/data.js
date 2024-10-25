@@ -17,6 +17,8 @@ import {
   FiList,
   FiPhoneIncoming,
 } from "react-icons/fi";
+import { LiaShippingFastSolid } from "react-icons/lia";
+import { MdOutlineCancel } from "react-icons/md";
 
 const pages = [
   // {
@@ -49,20 +51,26 @@ const pages = [
     href: "/contact-us",
     icon: FiPhoneIncoming,
   },
-  {
-    title: "privacy-policy-page",
-    href: "/privacy-policy",
-    icon: FiPocket,
-  },
+ 
   {
     title: "terms-and-conditions-page",
     href: "/terms-and-conditions",
     icon: FiFileText,
   },
   {
-    title: "not-found-page",
-    href: "/404",
-    icon: FiAlertCircle,
+    title: "return-refund-&-cancellation-policy",
+    href: "/return-refund-&-cancellation-policy",
+    icon: MdOutlineCancel,
+  },
+  {
+    title: "shipping-policy",
+    href: "/shipping-policy",
+    icon: LiaShippingFastSolid,
+  },
+  {
+    title: "privacy-policy-page",
+    href: "/privacy-policy",
+    icon: FiPocket,
   },
 ];
 
